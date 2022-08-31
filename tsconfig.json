@@ -1,0 +1,19 @@
+{
+  "include": ["src/**/*.ts"],
+  "exclude": ["**/*.test.ts"],
+  "compilerOptions": {
+    "noEmit": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "esnext",
+    "lib": ["esnext"],
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "stripInternal": true,
+    "noImplicitOverride": true,
+    "useUnknownInCatchVariables": false,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "name": "@hyrious/esbuild-plugin-code-tag",
+  "version": "0.1.0",
+  "description": "Strip code tag functions and dedent strings",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "exports": {
+    "require": "./dist/index.js",
+    "default": "./dist/index.mjs"
+  },
+  "types": "./src/index.ts",
+  "files": [
+    "src",
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "esbuild-dev src/index.test.ts"
+  },
+  "keywords": [
+    "esbuild",
+    "esbuild-plugin",
+    "tag",
+    "template literals",
+    "prettier",
+    "html",
+    "css",
+    "graphql"
+  ],
+  "repository": "hyrious/esbuild-plugin-code-tag",
+  "author": "hyrious <hyrious@outlook.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@hyrious/esbuild-dev": "^0.8.2",
+    "@types/dedent": "^0.7.0",
+    "@types/node": "^18.7.14",
+    "code-tag": "^1.1.0",
+    "dedent": "^0.7.0",
+    "esbuild": "^0.15.6",
+    "tsup": "^6.2.3",
+    "typescript": "^4.8.2"
+  }
+}
