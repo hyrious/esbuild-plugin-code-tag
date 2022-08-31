@@ -107,3 +107,7 @@ not having this plugin.
   `;
   const fragment = html`<style>${style}<style>`;
   ```
+
+## License
+
+MIT @ [hyrious](https://github.com/hyrious)
