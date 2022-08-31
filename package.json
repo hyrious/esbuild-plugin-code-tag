@@ -8,7 +8,7 @@
     "require": "./dist/index.js",
     "default": "./dist/index.mjs"
   },
-  "types": "./src/index.ts",
+  "types": "./dist/index.d.ts",
   "files": [
     "src",
     "dist"

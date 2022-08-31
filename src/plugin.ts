@@ -1,6 +1,7 @@
-import type { PartialMessage, Plugin } from "esbuild";
-import { readFile } from "node:fs/promises";
+import type { Plugin } from "esbuild";
+
 import { default as dedentString } from "dedent";
+import { readFile } from "node:fs/promises";
 import { walkTags } from "./lexer";
 
 export interface CodeTagOptions {
@@ -48,7 +49,7 @@ const defaultTags = ["html", "css", "gql", "graphql", "md", "markdown", "sql"];
 export function codeTag({
   filter = /\.(m?ts|[jt]sx)$/,
   tags = defaultTags,
-  dedent = defaultTags,
+  dedent = [],
 }: CodeTagOptions = {}): Plugin {
   const tagsSet = new Set(tags);
   const dedentSet = new Set(dedent);
